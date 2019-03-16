@@ -9,13 +9,13 @@ namespace TrashCollectorDemo
     public class Customer
     {
         [Key]
-        public int Id { get; set; }
+        public int CustomeerId { get; set; }
 
         public string Name { get; set; }
 
         public string Address { get; set; }
 
-        public string Zip { get; set; }
+        public string CustomerZip { get; set; }
 
         public double MonthlyBill { get; set; }
 
