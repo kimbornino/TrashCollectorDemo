@@ -208,6 +208,10 @@
     <Compile Include="Migrations\201903211423027_Updates User Roles Table to include Customer and Employee.Designer.cs">
       <DependentUpon>201903211423027_Updates User Roles Table to include Customer and Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903221535358_try.cs" />
+    <Compile Include="Migrations\201903221535358_try.Designer.cs">
+      <DependentUpon>201903221535358_try.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Global.asax.cs">
@@ -325,6 +329,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903211423027_Updates User Roles Table to include Customer and Employee.resx">
       <DependentUpon>201903211423027_Updates User Roles Table to include Customer and Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903221535358_try.resx">
+      <DependentUpon>201903221535358_try.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

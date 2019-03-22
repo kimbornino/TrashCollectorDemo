@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using TrashCollectorDemo.Models;
 
 namespace TrashCollectorDemo
 {
@@ -18,6 +20,10 @@ namespace TrashCollectorDemo
         public string CustomerZip { get; set; }
 
         public double MonthlyBill { get; set; }
+
+        [ForeignKey("ApplicationUser")]
+        public string ApplicationUserId { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
 
     }
 }
