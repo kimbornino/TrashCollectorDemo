@@ -195,17 +195,33 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="Employee.cs" />
+    <Compile Include="Controllers\PickupsController.cs" />
+    <Compile Include="Migrations\201903211328116_Initial.cs" />
+    <Compile Include="Migrations\201903211328116_Initial.Designer.cs">
+      <DependentUpon>201903211328116_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903211423027_Updates User Roles Table to include Customer and Employee.cs" />
+    <Compile Include="Migrations\201903211423027_Updates User Roles Table to include Customer and Employee.Designer.cs">
+      <DependentUpon>201903211423027_Updates User Roles Table to include Customer and Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903162103203_Add all models .cs" />
+    <Compile Include="Migrations\201903162103203_Add all models .Designer.cs">
+      <DependentUpon>201903162103203_Add all models .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Pickup.cs" />
+    <Compile Include="Models\Pickup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -268,6 +284,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Pickups\Create.cshtml" />
+    <Content Include="Views\Pickups\Delete.cshtml" />
+    <Content Include="Views\Pickups\Details.cshtml" />
+    <Content Include="Views\Pickups\Edit.cshtml" />
+    <Content Include="Views\Pickups\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,6 +315,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201903162103203_Add all models .resx">
+      <DependentUpon>201903162103203_Add all models .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211328116_Initial.resx">
+      <DependentUpon>201903211328116_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211423027_Updates User Roles Table to include Customer and Employee.resx">
+      <DependentUpon>201903211423027_Updates User Roles Table to include Customer and Employee.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

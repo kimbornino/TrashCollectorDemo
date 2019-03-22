@@ -14,6 +14,8 @@ namespace TrashCollectorDemo
 
         public string Day { get; set; }
 
+        public bool Custom { get; set; }
+
         DateTime SuspendStart { get; set; }
 
         DateTime SuspendEnd { get; set; }

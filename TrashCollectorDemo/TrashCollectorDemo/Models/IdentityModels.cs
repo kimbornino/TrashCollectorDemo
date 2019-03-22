@@ -29,8 +29,12 @@ namespace TrashCollectorDemo.Models
         {
             return new ApplicationDbContext();
         }
-        DbSet<Employee> Employees { get; set; }
-        DbSet<Customer> Customer { get; set; }
-        DbSet<Pickup> Pickups { get; set; }
+        
+
+        public System.Data.Entity.DbSet<TrashCollectorDemo.Customer> Customers { get; set; }
+
+        public System.Data.Entity.DbSet<TrashCollectorDemo.Employee> Employees { get; set; }
+
+        public System.Data.Entity.DbSet<TrashCollectorDemo.Pickup> Pickups { get; set; }
     }
 }
